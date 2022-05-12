@@ -8,10 +8,11 @@
 -->
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=0.9">
         <title>Prabal's Time Table</title>
     </head>
     <body>
+        
         <style>
             
             th,td,tr,table,thead,tbody{
@@ -20,6 +21,10 @@
             }
             td{
                 text-align: center;
+                
+            }
+            a, a:visited, a:hover, a:active {
+                color: inherit;
                 
             }
             #time{
@@ -48,7 +53,7 @@
                 <tbody>
                     <tr>
                         <td id="time">10-30 to 11-00 am</td>
-                        <td id="subject" title="Read some English stories and analyze them!">Englsih Literature</td>
+                        <td id="subject" title="Read some English stories and analyze them!">English Literature</td>
                         <td id="subject" title="Learning about ancient Kings and Kingdoms">History/Civics</td>
                         <td id="subject" title="Undoubtedly, My most favorite class. I love Maths">Mathematics</td>
                         <td id="subject" title="Learning about the Plant and Animal Kingdoms">Biology</td>
@@ -61,23 +66,23 @@
                         <td id="subject" title="After, Long hours of sitting and attending classes, Its Time to Move">Physical Training</td>
                         <td id="subject" title="Coding is my hobby">Computer</td>
                         <td id="subject" title="Undoubtedly, My most favorite class. I love Maths">Mathematics</td>
-                        <td id="subject" title="Same as English class, but in Bengali">Bengali 2nd Language</td>
+                        <td id="subject" title="Same as English class, but in Bengali">Bengali Literature</td>
                     </tr>
                     
                     <tr>
                         <td id="time">11-40 to 12 -10 pm</td>
                         <td id="subject" title="Undoubtedly, My most favorite class. I love Maths">Mathematics</td>
-                        <td id="subject" title="Same as English class, but in Bengali">Bengali 2nd Language</td>
+                        <td id="subject" title="Same as English class, but in Bengali">Bengali Literature</td>
                         <td id="subject" title="Learning new chemical bonds and Reactions">Chemistry</td>
                         <td id="subject" title="Coding is my hobby">Computer</td>
                         <td id="subject" title="Learning new chemical bonds and Reactions">Chemistry</td>
                     </tr>
                     <tr>
                         <td id="time">12-15 to 12-45 pm</td>
-                        <td id="subject" title="Same as English class, but in Bengali">Bengali 2nd Language</td>
-                        <td id="subject" title="Learn to properly write English">Englsih Grammer</td>
-                        <td id="subject" title="Read some English stories and analyze them!">Englsih Literature</td>
-                        <td id="subject" title="Same as English class, but in Bengali">Bengali 2nd Language</td>
+                        <td id="subject" title="Same as English class, but in Bengali">Bengali Literature</td>
+                        <td id="subject" title="Learn to properly write English">English Grammar</td>
+                        <td id="subject" title="Read some English stories and analyze them!">English Literature</td>
+                        <td id="subject" title="Same as English class, but in Bengali">Bengali Language</td>
                         <td id="subject" title="Learning about the Plant and Animal Kingdoms">Biology</td>
                     </tr>
                     <tr>
@@ -86,7 +91,7 @@
                         <td id="subject" title="Grow our Knowledge with Books">Library</td>
                         <td id="subject" title="Exploring and learning about the world sitting in a classroom">Geography</td>
                         <td id="subject" title="Exploring and learning about the world sitting in a classroom">Geography</td>
-                        <td id="subject" title="Same as English class, but in Bengali">Bengali 2nd Language</td>
+                        <td id="subject" title="Same as English class, but in Bengali">Bengali Literature</td>
                     </tr>
                     <tr>
                         <td id="time">1-20 to 1-50 pm</td>
@@ -105,23 +110,74 @@
                     <tr>
                         <td id="time">2-25 to 2-55 pm</td>
                         <td id="subject" title="Learning about the Plant and Animal Kingdoms">Biology</td>
-                        <td id="subject" title="Experimenting Practically"><span style="color:blue">Physics</span> or <span style="color:blue">Chemistry</span><br><span>(Choose Accordingly)</span></td>
+                        <td id="subject" title="Experimenting Practically"><a href="https://meet.google.com/vku-jboc-joe" target="_blank" rel="noopener noreferrer"><span style="color:blue">Chemistry</span></a> or <a href="https://meet.google.com/ysy-rbsj-biw" target="_blank" rel="noopener noreferrer"><span style="color:blue">Physics</span></a><br><span>(Choose Accordingly)</span></td>
                         <td id="subject" title="Learning about ancient Kings and Kingdoms">History/Civics</td>
-                        <td id="subject" title="Learn to properly write English">Englsih Grammer</td>
+                        <td id="subject" title="Learn to properly write English">English Grammar</td>
                         <td id="subject" title="Exploring and learning about the world sitting in a classroom">Geography</td>
                     </tr>
                     <tr>
                         <td id="time">3:00 to 3:30 pm</td>
-                        <td id="subject" title="Class for Projecting our Imagination into an Essay">Englsih Composition</td>
-                        <td id="subject" title="Read some English stories and analyze them!">Englsih Literature</td>
-                        <td id="subject" title="Same as English class, but in Bengali">Bengali 2nd Language</td>
+                        <td id="subject" title="Class for Projecting our Imagination into an Essay">English Composition</td>
+                        <td id="subject" title="Read some English stories and analyze them!">English Literature</td>
+                        <td id="subject" title="Same as English class, but in Bengali">Bengali Language</td>
                         <td id="subject" title="Explanation of different real world phenomenon">Physics</td>
-                        <td id="subject" title="Read some English stories and analyze them!">Englsih Literature</td>
+                        <td id="subject" title="Read some English stories and analyze them!">English Literature</td>
                     </tr>
                 </tbody>
 
 
             </table>
         </div>
+        <script>
+            var elements = document.getElementsByTagName("td");
+            for (let i = 0; i < elements.length;i++) {
+                var cur = elements[i];
+                if (cur.innerHTML=="Physics"){
+                    cur.innerHTML=`<a href="https://meet.google.com/ysy-rbsj-biw" target="_blank" rel="noopener noreferrer">${cur.innerHTML}</a>`;
+                }
+                else if (cur.innerHTML=="English Literature"){
+                    cur.innerHTML=`<a href="https://meet.google.com/zzi-tgbv-yad" target="_blank" rel="noopener noreferrer">${cur.innerHTML}</a>`;
+                }else if (cur.innerHTML=="Mathematics"){
+                    cur.innerHTML=`<a href="https://meet.google.com/fyb-munh-bbr" target="_blank" rel="noopener noreferrer">${cur.innerHTML}</a>`;
+                }
+                else if (cur.innerHTML=="Bengali Language"){
+                    cur.innerHTML=`<a href="https://meet.google.com/kyj-xyxn-atj" target="_blank" rel="noopener noreferrer">${cur.innerHTML}</a>`;
+                }
+                else if (cur.innerHTML=="Bengali Literature"){
+                    cur.innerHTML=`<a href="http://meet.google.com/tvy-btzg-bzi" target="_blank" rel="noopener noreferrer">${cur.innerHTML}</a>`;
+                }
+                else if (cur.innerHTML=="History/Civics"){
+                    cur.innerHTML=`<a href="https://meet.google.com/kiv-kfka-yed" target="_blank" rel="noopener noreferrer">${cur.innerHTML}</a>`;
+                }
+                else if (cur.innerHTML=="Computer"){
+                    cur.innerHTML=`<a href="http://meet.google.com/wqn-mhoc-dzu" target="_blank" rel="noopener noreferrer">${cur.innerHTML}</a>`;
+                }
+                else if (cur.innerHTML=="Biology"){
+                    cur.innerHTML=`<a href="https://meet.google.com/qtf-jacr-iiz" target="_blank" rel="noopener noreferrer">${cur.innerHTML}</a>`;
+                }
+                else if (cur.innerHTML=="English Composition"){
+                    cur.innerHTML=`<a href="https://meet.google.com/zzi-tgbv-yad" target="_blank" rel="noopener noreferrer">${cur.innerHTML}</a>`;
+                }
+                else if (cur.innerHTML=="Arts Education/SUPW"){
+                    cur.innerHTML=`<a href="https://meet.google.com/ysm-htaq-zre" target="_blank" rel="noopener noreferrer">${cur.innerHTML}</a>`;
+                }
+                else if (cur.innerHTML=="English Grammar"){
+                    cur.innerHTML=`<a href="https://meet.google.com/ika-cviz-nvb" target="_blank" rel="noopener noreferrer">${cur.innerHTML}</a>`;
+                }
+                else if (cur.innerHTML=="Geography"){
+                    cur.innerHTML=`<a href="https://meet.google.com/xae-hacw-nbk" target="_blank" rel="noopener noreferrer">${cur.innerHTML}</a>`;
+                }
+                else if (cur.innerHTML=="Chemistry"){
+                    cur.innerHTML=`<a href="https://meet.google.com/vku-jboc-joe" target="_blank" rel="noopener noreferrer">${cur.innerHTML}</a>`;
+                }else if (cur.innerHTML=="Hindi 3rd Language"){
+                    cur.innerHTML=`<a href="https://meet.google.com/jit-yhti-whe" target="_blank" rel="noopener noreferrer">${cur.innerHTML}</a>`;
+                }
+                else if (cur.innerHTML=="Library"){
+                    cur.innerHTML=`<a href="https://meet.google.com/nxq-hfzi-yxo" target="_blank" rel="noopener noreferrer">${cur.innerHTML}</a>`;
+                }
+                else if (cur.innerHTML=="Physical Training"){
+                    cur.innerHTML=`<a href="https://meet.google.com/moj-cquj-ndw" target="_blank" rel="noopener noreferrer">${cur.innerHTML}</a>`;
+                }
+            }</script>
     </body>
 </html>
